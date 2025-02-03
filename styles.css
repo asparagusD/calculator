@@ -1,0 +1,30 @@
+body {
+    background-color: #45171d;
+    box-sizing: border-box;
+}
+
+#daddy-container {
+    height: 95vh;
+    width: 70vh;
+    background-color: #c3bef0;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+     
+}
+
+#display {
+    display: flex;   
+}
+
+textarea {
+    flex: 1;
+    height: 14vh;
+    text-align: end;
+    line-height: 14vh;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 7px;
+}
