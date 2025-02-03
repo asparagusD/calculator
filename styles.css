@@ -11,11 +11,15 @@ body {
     padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
-     
+    display: flex;
+    flex-direction: column; 
 }
 
 #display {
     display: flex;   
+    flex: 1;
+    background-color: #000413;
+    flex-direction: column;
 }
 
 textarea {
@@ -23,8 +27,34 @@ textarea {
     height: 14vh;
     text-align: end;
     line-height: 14vh;
-    font-size: 50px;
-    border: 2px solid black;
+    font-size: 56px;
+    border: 7px solid black;
     border-radius: 7px;
     padding: 7px;
+    background-color: #a5c3c6;
+}
+
+button {
+    flex: 1;
+    border-radius: 7px;
+    background-color: #45171d;
+    color: white;
+    font-size: 28px;
+}
+
+#row4 #column0 {
+    flex: 2.2;
+    /* background-color: #45171d; */
+}
+
+#row0 button {
+    background-color: rgb(5, 110, 85);
+}
+ 
+#column3 {
+    background-color: rgb(145, 85, 7);
+}
+
+#row0 #column3 {
+    background-color: rgb(145, 85, 7);
 }
