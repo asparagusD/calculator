@@ -57,3 +57,7 @@ button {
 #row0 #column3 {
     background-color: rgb(145, 85, 7);
 }
+
+button:hover {
+    background-color: #000413;
+}
