@@ -1,5 +1,10 @@
 const bigDiv = document.querySelector("#display");
+let disp = document.createElement("textarea");
+disp.textContent = 0;
+bigDiv.appendChild(disp);
 let div = [];
+let button = [];
+let btn;
 let buttonText = [
     ["AC", "Delete", "%", "/"],
     ["7", "8", "9", "*"],
@@ -16,15 +21,116 @@ for (let i=0; i<5; i++) {
 
     for (let j=0; j<4; j++) {
         if (i===4 && j===1) continue;
-        const btn = document.createElement("button");
+        btn = document.createElement("button");
         btn.textContent = buttonText[i][j];
         btn.setAttribute("id", `column${j}`);
         div[i].appendChild(btn);
-        
+               
     }
 }
 
+button[0] = document.querySelector(`#row1 #column0`);    //7
+button[0].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[0].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    }    
+});
 
+button[1] = document.querySelector(`#row1 #column1`);    //8
+button[1].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[1].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[2] = document.querySelector(`#row1 #column2`);    //9
+button[2].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[2].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[3] = document.querySelector(`#row2 #column0`);    //4
+button[3].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[3].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[4] = document.querySelector(`#row2 #column1`);    //5
+button[4].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[4].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[5] = document.querySelector(`#row2 #column2`);    //6
+button[5].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[5].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[6] = document.querySelector(`#row3 #column0`);    //1
+button[6].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[6].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[7] = document.querySelector(`#row3 #column1`);    //2
+button[7].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[7].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[8] = document.querySelector(`#row3 #column2`);    //3
+button[8].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[8].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+button[9] = document.querySelector(`#row4 #column0`);    //0
+button[9].addEventListener("click", (event) => {
+    if (disp.textContent.length < 11) {
+        disp.textContent = disp.textContent * 10 + +button[9].textContent;
+        number1 = disp.textContent;
+    } else {
+        event.preventDefault();
+    } 
+});
+
+               
+     
 
 let number1;
 let number2;
