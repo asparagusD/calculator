@@ -201,6 +201,13 @@ button[15].addEventListener("click", () => {
     operator[0] = "+";
     number = 0;
 });
+
+button[16] = document.querySelector(`#row0 #column2`);    //%
+button[16].addEventListener("click", () => {
+    number = number / 100;
+    clear();
+    disp.textContent = number;
+});
      
 
 function add(a) {
@@ -220,6 +227,11 @@ function multiply(a) {
 
 function divide(a) {
     sum = sum / a;
+    return sum;
+}
+
+function percent(a) {
+    sum = a / 100;
     return sum;
 }
 
@@ -244,7 +256,12 @@ function operate(number, operator) {
             divide(number);
             clear();
             disp.textContent = sum;
-            break;            
+            break;
+        case '%':
+            percent(number);
+            clear();
+            disp.textContent = sum;
+            break;                
     }
 }
 
