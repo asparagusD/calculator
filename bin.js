@@ -38,120 +38,118 @@ for (let i=0; i<5; i++) {
 }
 
 button[0] = document.querySelector(`#row1 #column0`);    //7
-button[0].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[0].textContent;
+button[0].addEventListener("click", () => {
+    result = result * 10 + +button[0].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-        
-    } else {
-        event.preventDefault();
-    }    
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent;
 });
 
 button[1] = document.querySelector(`#row1 #column1`);    //8
-button[1].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[1].textContent;
+button[1].addEventListener("click", () => {
+    result = result * 10 + +button[1].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-        
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[2] = document.querySelector(`#row1 #column2`);    //9
-button[2].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[2].textContent;
+button[2].addEventListener("click", () => {
+    result = result * 10 + +button[2].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent;
 });
 
 button[3] = document.querySelector(`#row2 #column0`);    //4
-button[3].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[3].textContent;
+button[3].addEventListener("click", () => {
+    result = result * 10 + +button[3].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[4] = document.querySelector(`#row2 #column1`);    //5
 button[4].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[4].textContent;
+    result = result * 10 + +button[4].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent;
 });
 
 button[5] = document.querySelector(`#row2 #column2`);    //6
-button[5].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[5].textContent;
+button[5].addEventListener("click", () => {
+    result = result * 10 + +button[5].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[6] = document.querySelector(`#row3 #column0`);    //1
-button[6].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[6].textContent;
+button[6].addEventListener("click", () => {
+    result = result * 10 + +button[6].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[7] = document.querySelector(`#row3 #column1`);    //2
-button[7].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[7].textContent;
+button[7].addEventListener("click", () => {
+    result = result * 10 + +button[7].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[8] = document.querySelector(`#row3 #column2`);    //3
-button[8].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[8].textContent;
+button[8].addEventListener("click", () => {
+    result = result * 10 + +button[8].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[9] = document.querySelector(`#row4 #column0`);    //0
-button[9].addEventListener("click", (event) => {
-    if (disp.textContent.length < 11) {
-        result = result * 10 + +button[9].textContent;
+button[9].addEventListener("click", () => {
+    result = result * 10 + +button[9].textContent;
+    if (result.toString().length < 12) {
         disp.textContent = result;
-        number = result;
-    } else {
-        event.preventDefault();
-    } 
+    } else if (result.toString().length > 20) {
+        allClear();
+    }   
+    number = +disp.textContent; 
 });
 
 button[10] = document.querySelector(`#row3 #column3`);    // +
 button[10].addEventListener("click", () => {
-    operator[op] = button[10].textContent;   
+    operator[op] = button[10].textContent; 
     operate(number, operator[op-1]);
     op++;
     number = sum;
@@ -182,7 +180,6 @@ button[13].addEventListener("click", () => {
     operate(number, operator[op-1]);
     op++;
     number = sum;
-    
 });
 
 button[14] = document.querySelector(`#row4 #column3`);    // =
@@ -194,17 +191,13 @@ button[14].addEventListener("click", () => {
 
 button[15] = document.querySelector(`#row0 #column0`);    // AC
 button[15].addEventListener("click", () => {
-    clear();
-    sum = 0;
-    op = 1;
-    operator = [];
-    operator[0] = "+";
-    number = 0;
+    allClear();
 });
 
 button[16] = document.querySelector(`#row0 #column2`);    //%
 button[16].addEventListener("click", () => {
     number = number / 100;
+    number = Math.floor(number * 10000000000) / 10000000000;
     clear();
     disp.textContent = number;
 });
@@ -227,40 +220,51 @@ function multiply(a) {
 
 function divide(a) {
     sum = sum / a;
+    if (sum === Infinity) {
+        sum = "Math Error";
+    }
     return sum;
 }
 
-function percent(a) {
-    sum = a / 100;
-    return sum;
-}
+
 
 function operate(number, operator) {
     switch(operator) {
         case '+':
             add(number);
             clear();
-            disp.textContent = sum;
+            if (sum.toString().length < 12) {
+                disp.textContent = sum;
+            } else {
+                disp.textContent = sum.toString().slice(0, 11);
+            }
             break;
         case '-':
             subtract(number);
             clear();
-            disp.textContent = sum;
+            if (sum.toString().length < 12) {
+                disp.textContent = sum;
+            } else {
+                disp.textContent = sum.toString().slice(0, 11);
+            }
             break;
         case '*':
             multiply(number);
             clear();
-            disp.textContent = sum;
+            if (sum.toString().length < 12) {
+                disp.textContent = sum;
+            } else {
+                disp.textContent = sum.toString().slice(0, 11);
+            }
             break;
         case '/':
             divide(number);
             clear();
-            disp.textContent = sum;
-            break;
-        case '%':
-            percent(number);
-            clear();
-            disp.textContent = sum;
+            if (sum.toString().length < 12) {
+                disp.textContent = sum;
+            } else {
+                disp.textContent = sum.toString().slice(0, 11);
+            }
             break;                
     }
 }
@@ -268,4 +272,14 @@ function operate(number, operator) {
 function clear() {
     disp.textContent = 0;
     result = 0;
+}
+
+function allClear() {
+    disp.textContent = 0;
+    result = 0;
+    sum = 0;
+    op = 1;
+    operator = [];
+    operator[0] = "+";
+    number = 0;
 }
