@@ -1,6 +1,7 @@
 let number;
 let op = 1;
 let operator = [];
+let arr = [];
 operator[0] = "+";
 let sum = 0;
 let result;
@@ -197,7 +198,6 @@ button[9].addEventListener("click", () => {
     number = +disp.textContent; 
 });
 
-
 button[10] = document.querySelector(`#row3 #column3`);    // +
 button[10].addEventListener("click", () => {
     operator[op] = button[10].textContent; 
@@ -263,7 +263,19 @@ button[17].addEventListener("click", (event) => {
     }      
 });
 
-     
+button[18] = document.querySelector(`#row0 #column1`);    // delete
+button[18].addEventListener("click", () => {
+    if (disp.textContent.length <= 1) {
+        result = 0;
+    } else {
+        arr = disp.textContent.split("");
+        arr.splice(-1, 1);
+        result = arr.join("");
+    }
+    disp.textContent = result;
+    number = +disp.textContent;
+});
+
 
 function add(a) {
     sum = sum + a;
@@ -333,8 +345,6 @@ function clear() {
     disp.textContent = 0;
     result = 0;
 }
-
-
 
 function allClear() {
     disp.textContent = 0;
