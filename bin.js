@@ -56,6 +56,7 @@ button[0].addEventListener("click", () => {
     number = +disp.textContent;
 });
 
+
 button[1] = document.querySelector(`#row1 #column1`);    //8
 button[1].addEventListener("click", () => {
     if (disp.textContent.indexOf('.') > -1) {
@@ -274,6 +275,48 @@ button[18].addEventListener("click", () => {
     }
     disp.textContent = result;
     number = +disp.textContent;
+});
+
+window.addEventListener("keypress", (event) => {
+    if (event.key === "7") {
+        button[0].click();
+    } else if (event.key === "8") {
+        button[1].click();
+    } else if (event.key === "9") {
+        button[2].click();
+    } else if (event.key === "4") {
+        button[3].click();
+    } else if (event.key === "5") {
+        button[4].click();
+    } else if (event.key === "6") {
+        button[5].click();
+    } else if (event.key === "1") {
+        button[6].click();
+    } else if (event.key === "2") {
+        button[7].click();
+    } else if (event.key === "3") {
+        button[8].click();
+    } else if (event.key === "0") {
+        button[9].click();
+    } else if (event.key === "+") {
+        button[10].click();
+    } else if (event.key === "-") {
+        button[11].click();
+    } else if (event.key === "*") {
+        button[12].click();
+    } else if (event.key === "/") {
+        button[13].click();
+    } else if (event.key === "Enter") {
+        button[14].click();
+    } else if (event.key === "c") {
+        button[15].click();
+    } else if (event.key === "%") {
+        button[16].click();
+    } else if (event.key === ".") {
+        button[17].click();
+    } else if (event.key === "Backspace") {
+        button[18].click();
+    }
 });
 
 
