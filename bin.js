@@ -171,7 +171,7 @@ window.addEventListener("keypress", (event) => {
         button[16].click();
     } else if (event.key === ".") {
         button[17].click();
-    } else if (event.key === "Backspace") {
+    } else if (event.key === "d") {
         button[18].click();
     }
 });
