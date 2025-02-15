@@ -74,6 +74,13 @@ for (let i=0; i<=9; i++) {
 for (let i=10; i<=11; i++) {
     button[i].addEventListener("click", () => {
         operator[op] = button[i].textContent; 
+        if (operator[op-1] === '=' && result != 0) {
+            sum = 0;
+            op = 1;
+            operator = [];
+            operator[0] = "+";
+            operator[op] = button[i].textContent;
+        }
         operate(number, operator[op-1]);
         op++;
         number = 0;
@@ -84,15 +91,23 @@ for (let i=10; i<=11; i++) {
 for (let i=12; i<=13; i++) {
     button[i].addEventListener("click", () => {
         operator[op] = button[i].textContent;
+        if (operator[op-1] === '=' && result != 0) {
+            sum = 0;
+            op = 1;
+            operator = [];
+            operator[0] = "+";
+            operator[op] = button[i].textContent;
+        }
         operate(number, operator[op-1]);    
         op++;
-        number = 1;
-        
+        number = 1; 
+          
     });   
 }
 
 button[14] = document.querySelector(`#row4 #column3`);    // =
 button[14].addEventListener("click", () => {
+    operator[op] = button[14].textContent;
     operate(number, operator[op-1]);
     op++;
     number = sum;
@@ -217,7 +232,10 @@ function operate(number, operator) {
         case '/':
             divide(number);
             compute();
-            break;                
+            break;   
+        case '=':
+            compute();
+            break;                 
     }
 }
 
